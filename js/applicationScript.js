@@ -66,7 +66,7 @@ var LadeMusiktitel = function(){
 
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
-    document.getElementById("p");
+    document.getElementById("p").innerText = data.map(song );
   },
   function(error) {
     console.log(error);
