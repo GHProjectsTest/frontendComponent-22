@@ -66,7 +66,7 @@ var LadeMusiktitel = function(){
 
   client.sendRequest("GET", "songs", "", "", {}, false,
   function(data, type) {
-    console.log(data);
+    console.log(data);;
   },
   function(error) {
     console.log(error);
